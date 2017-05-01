@@ -1,6 +1,6 @@
 [
     {
-        "id":"82bc2d7e",
+        "id":"card",
         "name":"Paper / Card",
         "notes":"Wizard Default - DO NOT EDIT",
         "isEditable": false,
@@ -65,7 +65,7 @@
         ]
     },
     {
-        "id": "3d344bdf",
+        "id": "acrylic",
         "name": "Acrylic",
         "notes": "Wizard Default - DO NOT EDIT",
         "isEditable": false,
@@ -117,7 +117,7 @@
         ]
     },
     {
-        "id": "115eccef",
+        "id": "wood",
         "name": "Wood",
         "notes": "Wizard Default - DO NOT EDIT",
         "isEditable": false,
