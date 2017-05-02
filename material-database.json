@@ -6,7 +6,15 @@
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
-            "params": { }
+            "notes":"DEFAULT",
+            "params": {
+                "startHeight": 1,
+                "laserPower": 40,
+                "cutRate": 1500,
+                "segmentLength": 0.4,
+                "passes": 1,
+                "useBlower": false
+            }
         },
         "presets":[
             {
@@ -57,7 +65,7 @@
                     "startHeight": 1,
                     "laserPower": 40,
                     "cutRate": 2000,
-                    "segmentLength": 0.4,
+                    "lineDistance": 0.15,
                     "passes": 1,
                     "useBlower": false
                 }
@@ -71,7 +79,15 @@
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
-            "params": { }
+            "notes":"DEFAULT",
+            "params": {
+                "startHeight": 3,
+                "laserPower": 40,
+                "cutRate": 500,
+                "segmentLength": 0.4,
+                "passes": 1,
+                "useBlower": true
+            }
         },
         "presets":[
             {
@@ -109,7 +125,7 @@
                     "startHeight": 6,
                     "laserPower": 40,
                     "cutRate": 2000,
-                    "segmentLength": 0.4,
+                    "lineDistance": 0.15,
                     "passes": 6,
                     "useBlower": true
                 }
@@ -123,7 +139,15 @@
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
-            "params": { }
+            "notes":"DEFAULT",
+            "params": {
+                "startHeight": 3,
+                "laserPower": 40,
+                "cutRate": 500,
+                "segmentLength": 0.4,
+                "passes": 1,
+                "useBlower": true
+            }
         },
         "presets":[
             {
@@ -161,7 +185,7 @@
                     "startHeight": 3,
                     "laserPower": 40,
                     "cutRate": 2000,
-                    "segmentLength": 0.4,
+                    "lineDistance": 0.15,
                     "passes": 1,
                     "useBlower": true
                 }
