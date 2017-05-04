@@ -1,44 +1,195 @@
 [
     {
-        "id":"light_v_engrave", 
-        "name":"Light Vector Engraving",
-        "notes":"Just scribing",
-        "template":{    
-            "type": "Laser Fill Path",
-            "params":{
-                "laserPower":"30",
-                "passes":"1",
-                "cutRate":"1500"
+        "id":"card",
+        "name":"Paper / Card",
+        "notes":"Wizard Default - DO NOT EDIT",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "startHeight": 1,
+                "laserPower": 40,
+                "cutRate": 1500,
+                "segmentLength": 0.4,
+                "passes": 1,
+                "useBlower": false
             }
         },
         "presets":[
             {
-                "id":"baltic_plywood",
-                "machine_profile":null,
-                "name": "Baltic Birch Plywood",
-                "notes": null,
+                "id": "8a70b5bd",
+                "machine_profile": null,
+                "name": "Copy Paper",
+			    "type": "Laser Cut",
+                "params": {
+                    "startHeight": 1,
+                    "laserPower": 40,
+                    "cutRate": 1500,
+                    "segmentLength": 0.4,
+                    "passes": 1,
+                    "useBlower": false
+                }
+            }, {
+                "id": "a34b1fd2",
+                "machine_profile": null,
+                "name": "3mm Card",
+			    "type": "Laser Cut",
+                "params": {
+                    "startHeight": 3,
+                    "laserPower": 60,
+                    "cutRate": 1000,
+                    "segmentLength": 0.4,
+                    "passes": 1,
+                    "useBlower": false
+                }
+            }, {
+                "id": "a62e6846",
+                "machine_profile": null,
+                "name": "6mm Card",
+			    "type": "Laser Cut",
+                "params": {
+                    "startHeight": 6,
+                    "laserPower": 100,
+                    "cutRate": 800,
+                    "segmentLength": 0.4,
+                    "passes": 1,
+                    "useBlower": true
+                }
+            }, {
+                "id": "9e8d5498",
+                "machine_profile": null,
+                "name": "Copy Paper",
 			    "type": "Laser Fill Path",
                 "params":{
-                    "filterFillColor":"green",
-                    "laserPower":"40",
-                    "passes":"1",
-                    "cutRate":"2000"
-                }
-            },
-            {
-                "id":"cast_acrylic",
-                "machine_profile":null,
-                "name": "Cast Acrylic",
-                "notes": null,
-                "type": "Laser Fill Path",
-                "params":{
-                    "filterFillColor":"green",
-                    "laserPower":"20",
-                    "passes":"1",
-                    "cutRate":"1500"
+                    "startHeight": 1,
+                    "laserPower": 40,
+                    "cutRate": 2000,
+                    "lineDistance": 0.5,
+                    "passes": 1,
+                    "useBlower": false
                 }
             }
         ]
-    } 
+    },
+    {
+        "id": "acrylic",
+        "name": "Acrylic",
+        "notes": "Wizard Default - DO NOT EDIT",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "startHeight": 3,
+                "laserPower": 40,
+                "cutRate": 500,
+                "segmentLength": 0.4,
+                "passes": 1,
+                "useBlower": true
+            }
+        },
+        "presets":[
+            {
+                "id": "71448690",
+                "machine_profile": null,
+                "name": "3mm Acrylic",
+			    "type": "Laser Cut",
+                "params": {
+                    "startHeight": 3,
+                    "laserPower": 100,
+                    "cutRate": 300,
+                    "segmentLength": 0.4,
+                    "passes": 3,
+                    "useBlower": true
+                }
+            }, {
+                "id":"264d75ab",
+                "machine_profile": null,
+                "name": "6mm Acrylic",
+			    "type": "Laser Cut",
+                "params": {
+                    "startHeight": 6,
+                    "laserPower": 100,
+                    "cutRate": 300,
+                    "segmentLength": 0.4,
+                    "passes": 6,
+                    "useBlower": true
+                }
+            }, {
+                "id":"37169aa4",
+                "machine_profile": null,
+                "name": "Acrylic",
+			    "type": "Laser Fill Path",
+                "params":{
+                    "startHeight": 6,
+                    "laserPower": 40,
+                    "cutRate": 2000,
+                    "lineDistance": 0.5,
+                    "passes": 6,
+                    "useBlower": true
+                }
+            }
+        ]
+    },
+    {
+        "id": "wood",
+        "name": "Wood",
+        "notes": "Wizard Default - DO NOT EDIT",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "startHeight": 3,
+                "laserPower": 40,
+                "cutRate": 500,
+                "segmentLength": 0.4,
+                "passes": 1,
+                "useBlower": true
+            }
+        },
+        "presets":[
+            {
+                "id": "2a045a4d",
+                "machine_profile": null,
+                "name": "3mm Plywood",
+			    "type": "Laser Cut",
+                "params": {
+                    "startHeight": 3,
+                    "laserPower": 100,
+                    "cutRate": 300,
+                    "segmentLength": 0.4,
+                    "passes": 3,
+                    "useBlower": true
+                }
+            }, {
+                "id":"d99bd629",
+                "machine_profile": null,
+                "name": "6mm Plywood",
+			    "type": "Laser Cut",
+                "params": {
+                    "startHeight": 6,
+                    "laserPower": 100,
+                    "cutRate": 300,
+                    "segmentLength": 0.4,
+                    "passes": 6,
+                    "useBlower": true
+                }
+            }, {
+                "id":"1baa9386",
+                "machine_profile": null,
+                "name": "Plywood",
+			    "type": "Laser Fill Path",
+                "params":{
+                    "startHeight": 3,
+                    "laserPower": 40,
+                    "cutRate": 2000,
+                    "lineDistance": 0.5,
+                    "passes": 1,
+                    "useBlower": true
+                }
+            }
+        ]
+    }
 ]
-
