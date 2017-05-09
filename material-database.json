@@ -151,7 +151,7 @@
                     "cutRate": 2000,
                     "laserDiameter": 0.2,
                     "passes": 2,
-                    "useBlower": false
+                    "useBlower": true
                 }
             }
         ]
@@ -223,7 +223,125 @@
                     "cutRate": 2000,
                     "laserDiameter": 0.2,
                     "passes": 2,
-                    "useBlower": false
+                    "useBlower": true
+                }
+            }
+        ]
+    },
+    {
+        "id": "leather",
+        "name": "Leather/Fabric",
+        "notes": "Wizard Default - DO NOT EDIT",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "startHeight": 3,
+                "laserPower": 40,
+                "cutRate": 500,
+                "segmentLength": 0.4,
+                "passes": 1,
+                "useBlower": true
+            }
+        },
+        "presets":[
+            {
+                "id": "leather_3mm_cut",
+                "machine_profile": null,
+                "name": "3mm Plywood",
+			    "type": "Laser Cut",
+                "params": {
+                    "startHeight": 3,
+                    "laserPower": 100,
+                    "cutRate": 300,
+                    "segmentLength": 0.4,
+                    "passes": 3,
+                    "useBlower": true
+                }
+            }, {
+                "id":"leather_6mm_cut",
+                "machine_profile": null,
+                "name": "6mm Plywood",
+			    "type": "Laser Cut",
+                "params": {
+                    "startHeight": 6,
+                    "laserPower": 100,
+                    "cutRate": 300,
+                    "segmentLength": 0.4,
+                    "passes": 6,
+                    "useBlower": true
+                }
+            }, {
+                "id":"leather_3mm_fill",
+                "machine_profile": null,
+                "name": "Plywood",
+			    "type": "Laser Fill Path",
+                "params":{
+                    "startHeight": 3,
+                    "laserPower": 40,
+                    "cutRate": 2000,
+                    "lineDistance": 0.5,
+                    "passes": 1,
+                    "useBlower": true
+                }
+            }, {
+                "id": "leather_3mm_raster",
+                "machine_profile": null,
+                "name": "Plywood",
+			    "type": "Laser Raster",
+                "params": {
+                    "startHeight": 3,
+                    "cutRate": 2000,
+                    "laserDiameter": 0.2,
+                    "passes": 2,
+                    "useBlower": true
+                }
+            }
+        ]
+    },
+    {
+        "id": "aluminum",
+        "name": "Anodised Aluminum",
+        "notes": "Wizard Default - DO NOT EDIT",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Fill Path",
+            "notes":"DEFAULT",
+            "params": {
+                "startHeight": 3,
+                "laserPower": 40,
+                "cutRate": 1000,
+                "lineDistance": 0.5,
+                "passes": 1,
+                "useBlower": true
+            }
+        },
+        "presets":[
+            {
+                "id":"metal_1mm_fill",
+                "machine_profile": null,
+                "name": "Aluminum",
+			    "type": "Laser Fill Path",
+                "params": {
+                    "startHeight": 1,
+                    "laserPower": 40,
+                    "cutRate": 1000,
+                    "lineDistance": 0.5,
+                    "passes": 1,
+                    "useBlower": true
+                }
+            }, {
+                "id": "metal_1mm_raster",
+                "machine_profile": null,
+                "name": "Aluminum",
+			    "type": "Laser Raster",
+                "params": {
+                    "startHeight": 1,
+                    "cutRate": 1000,
+                    "laserDiameter": 0.2,
+                    "passes": 2,
+                    "useBlower": true
                 }
             }
         ]
