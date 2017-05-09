@@ -2,7 +2,7 @@
     {
         "id":"card",
         "name":"Paper / Card",
-        "notes":"Wizard Default - DO NOT EDIT",
+        "notes":"Paper or card materials.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -87,7 +87,7 @@
     {
         "id": "acrylic",
         "name": "Acrylic",
-        "notes": "Wizard Default - DO NOT EDIT",
+        "notes": "Black or dark plastic materials.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -159,7 +159,7 @@
     {
         "id": "wood",
         "name": "Wood",
-        "notes": "Wizard Default - DO NOT EDIT",
+        "notes": "Resut depends on type of wood.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -230,8 +230,8 @@
     },
     {
         "id": "leather",
-        "name": "Leather/Fabric",
-        "notes": "Wizard Default - DO NOT EDIT",
+        "name": "Leather",
+        "notes": "Leather and thick fabric materials.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -302,8 +302,8 @@
     },
     {
         "id": "aluminum",
-        "name": "Anodised Aluminum",
-        "notes": "Wizard Default - DO NOT EDIT",
+        "name": "Aluminum",
+        "notes": "Anodised aluminum. Black preferably.",
         "isEditable": false,
         "template": {
             "type": "Laser Fill Path",
