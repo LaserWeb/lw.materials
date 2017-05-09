@@ -18,7 +18,7 @@
         },
         "presets":[
             {
-                "id": "8a70b5bd",
+                "id": "card_1mm_cut",
                 "machine_profile": null,
                 "name": "Copy Paper",
 			    "type": "Laser Cut",
@@ -31,7 +31,7 @@
                     "useBlower": false
                 }
             }, {
-                "id": "a34b1fd2",
+                "id": "card_3mm_cut",
                 "machine_profile": null,
                 "name": "3mm Card",
 			    "type": "Laser Cut",
@@ -44,7 +44,7 @@
                     "useBlower": false
                 }
             }, {
-                "id": "a62e6846",
+                "id": "card_6mm_cut",
                 "machine_profile": null,
                 "name": "6mm Card",
 			    "type": "Laser Cut",
@@ -57,9 +57,9 @@
                     "useBlower": true
                 }
             }, {
-                "id": "9e8d5498",
+                "id": "card_1mm_fill",
                 "machine_profile": null,
-                "name": "Copy Paper",
+                "name": "1mm Card",
 			    "type": "Laser Fill Path",
                 "params":{
                     "startHeight": 1,
@@ -67,6 +67,18 @@
                     "cutRate": 2000,
                     "lineDistance": 0.5,
                     "passes": 1,
+                    "useBlower": false
+                }
+            }, {
+                "id": "card_1mm_raster",
+                "machine_profile": null,
+                "name": "1mm Card",
+			    "type": "Laser Raster",
+                "params":{
+                    "startHeight": 1,
+                    "cutRate": 2000,
+                    "laserDiameter": 0.2,
+                    "passes": 2,
                     "useBlower": false
                 }
             }
@@ -91,7 +103,7 @@
         },
         "presets":[
             {
-                "id": "71448690",
+                "id": "acrylic_3mm_cut",
                 "machine_profile": null,
                 "name": "3mm Acrylic",
 			    "type": "Laser Cut",
@@ -104,7 +116,7 @@
                     "useBlower": true
                 }
             }, {
-                "id":"264d75ab",
+                "id":"acrylic_6mm_cut",
                 "machine_profile": null,
                 "name": "6mm Acrylic",
 			    "type": "Laser Cut",
@@ -117,17 +129,29 @@
                     "useBlower": true
                 }
             }, {
-                "id":"37169aa4",
+                "id":"acrylic_3mm_fill",
                 "machine_profile": null,
                 "name": "Acrylic",
 			    "type": "Laser Fill Path",
                 "params":{
-                    "startHeight": 6,
+                    "startHeight": 3,
                     "laserPower": 40,
                     "cutRate": 2000,
                     "lineDistance": 0.5,
                     "passes": 6,
                     "useBlower": true
+                }
+            }, {
+                "id": "acrylic_3mm_raster",
+                "machine_profile": null,
+                "name": "3mm Acrylic",
+			    "type": "Laser Raster",
+                "params":{
+                    "startHeight": 3,
+                    "cutRate": 2000,
+                    "laserDiameter": 0.2,
+                    "passes": 2,
+                    "useBlower": false
                 }
             }
         ]
@@ -151,7 +175,7 @@
         },
         "presets":[
             {
-                "id": "2a045a4d",
+                "id": "wood_3mm_cut",
                 "machine_profile": null,
                 "name": "3mm Plywood",
 			    "type": "Laser Cut",
@@ -164,7 +188,7 @@
                     "useBlower": true
                 }
             }, {
-                "id":"d99bd629",
+                "id":"wood_6mm_cut",
                 "machine_profile": null,
                 "name": "6mm Plywood",
 			    "type": "Laser Cut",
@@ -177,7 +201,7 @@
                     "useBlower": true
                 }
             }, {
-                "id":"1baa9386",
+                "id":"wood_3mm_fill",
                 "machine_profile": null,
                 "name": "Plywood",
 			    "type": "Laser Fill Path",
@@ -188,6 +212,18 @@
                     "lineDistance": 0.5,
                     "passes": 1,
                     "useBlower": true
+                }
+            }, {
+                "id": "wood_3mm_raster",
+                "machine_profile": null,
+                "name": "Plywood",
+			    "type": "Laser Raster",
+                "params": {
+                    "startHeight": 3,
+                    "cutRate": 2000,
+                    "laserDiameter": 0.2,
+                    "passes": 2,
+                    "useBlower": false
                 }
             }
         ]
