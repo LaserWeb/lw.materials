@@ -249,7 +249,7 @@
             {
                 "id": "leather_3mm_cut",
                 "machine_profile": null,
-                "name": "3mm Plywood",
+                "name": "3mm Leather",
 			    "type": "Laser Cut",
                 "params": {
                     "startHeight": 3,
@@ -262,7 +262,7 @@
             }, {
                 "id":"leather_6mm_cut",
                 "machine_profile": null,
-                "name": "6mm Plywood",
+                "name": "6mm Leather",
 			    "type": "Laser Cut",
                 "params": {
                     "startHeight": 6,
@@ -275,7 +275,7 @@
             }, {
                 "id":"leather_3mm_fill",
                 "machine_profile": null,
-                "name": "Plywood",
+                "name": "Leather",
 			    "type": "Laser Fill Path",
                 "params":{
                     "startHeight": 3,
@@ -288,7 +288,7 @@
             }, {
                 "id": "leather_3mm_raster",
                 "machine_profile": null,
-                "name": "Plywood",
+                "name": "Leather",
 			    "type": "Laser Raster",
                 "params": {
                     "startHeight": 3,
