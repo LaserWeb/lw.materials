@@ -1,7 +1,7 @@
 [
     {
         "id":"card",
-        "name":"Paper / Card",
+        "name":"Paper/Card",
         "notes":"Paper or card materials.",
         "isEditable": false,
         "template": {
@@ -85,8 +85,8 @@
         ]
     },
     {
-        "id": "acrylic",
-        "name": "Acrylic",
+        "id": "plastic",
+        "name": "Plastic",
         "notes": "Black or dark plastic materials.",
         "isEditable": false,
         "template": {
@@ -103,7 +103,7 @@
         },
         "presets":[
             {
-                "id": "acrylic_3mm_cut",
+                "id": "plastic_3mm_cut",
                 "machine_profile": null,
                 "name": "3mm Acrylic",
 			    "type": "Laser Cut",
@@ -116,7 +116,7 @@
                     "useBlower": true
                 }
             }, {
-                "id":"acrylic_6mm_cut",
+                "id":"plastic_6mm_cut",
                 "machine_profile": null,
                 "name": "6mm Acrylic",
 			    "type": "Laser Cut",
@@ -129,7 +129,7 @@
                     "useBlower": true
                 }
             }, {
-                "id":"acrylic_3mm_fill",
+                "id":"plastic_3mm_fill",
                 "machine_profile": null,
                 "name": "Acrylic",
 			    "type": "Laser Fill Path",
@@ -142,7 +142,7 @@
                     "useBlower": true
                 }
             }, {
-                "id": "acrylic_3mm_raster",
+                "id": "plastic_3mm_raster",
                 "machine_profile": null,
                 "name": "3mm Acrylic",
 			    "type": "Laser Raster",
@@ -230,8 +230,8 @@
     },
     {
         "id": "leather",
-        "name": "Leather",
-        "notes": "Leather and thick fabric materials.",
+        "name": "Leather/Fabric",
+        "notes": "Leather and fabric materials.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -301,9 +301,9 @@
         ]
     },
     {
-        "id": "aluminum",
-        "name": "Aluminum",
-        "notes": "Anodised aluminum. Black preferably.",
+        "id": "metal",
+        "name": "Metal",
+        "notes": "Dark or anodised metals preferably.",
         "isEditable": false,
         "template": {
             "type": "Laser Fill Path",
