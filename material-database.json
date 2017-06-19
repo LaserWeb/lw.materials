@@ -581,11 +581,11 @@
                 "name": "3mm Currugated Card",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 0.5,
+                    "startHeight": 3,
                     "laserPower": 100,
-                    "cutRate": 500,
+                    "cutRate": 300,
                     "segmentLength": 0,
-                    "passes": 1,
+                    "passes": 2,
                     "useBlower": true
                 }
             },
@@ -595,11 +595,11 @@
                 "name": "6mm Currugated Card",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 1,
+                    "startHeight": 6,
                     "laserPower": 100,
-                    "cutRate": 500,
+                    "cutRate": 300,
                     "segmentLength": 0,
-                    "passes": 1,
+                    "passes": 4,
                     "useBlower": true
                 }
             },
