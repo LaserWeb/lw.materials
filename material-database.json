@@ -3,7 +3,7 @@
         "id": "wood-mdf",
         "name": "Wood-MDF",
         "image": "wood.png",
-        "notes": "Result depends on type of MDF.",
+        "notes": "Medium Density Fibreboard. Results may vary.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -114,7 +114,7 @@
         "id": "wood-balsa",
         "name": "Wood-Balsa",
         "image": "wood.png",
-        "notes": "Result depends on type of Balsa.",
+        "notes": "Results depend on type of Balsa wood.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -233,15 +233,15 @@
             }
         ]
     },
-    
 
 
 
-{
+
+    {
         "id": "wood-ply",
         "name": "Wood-Ply",
         "image": "wood.png",
-        "notes": "Result depends on type of Ply.",
+        "notes": "Laminated wood materials.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -560,7 +560,7 @@
         "id": "corrugated-card",
         "name": "Corrugated Card",
         "image": "card.png",
-        "notes": "Result depends on type of Currugated Card.",
+        "notes": "Cardboard and Corrugated Card. Results may vary.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -671,7 +671,7 @@
                     "passes": 1,
                     "useBlower": true
                 }
-            }, 
+            },
             {
                 "id":"leather_2mm_cut",
                 "machine_profile": null,
@@ -699,7 +699,7 @@
                     "passes": 3,
                     "useBlower": true
                 }
-            }, 
+            },
 
             {
                 "id":"leather_fill",
@@ -731,7 +731,7 @@
     },
 
 
-        {
+    {
         "id": "fabric",
         "name": "Fabric",
         "image": "leather.png",
@@ -763,7 +763,7 @@
                     "passes": 1,
                     "useBlower": true
                 }
-            }, 
+            },
             {
                 "id":"fabric_3mm_cut",
                 "machine_profile": null,
@@ -777,7 +777,7 @@
                     "passes": 3,
                     "useBlower": true
                 }
-            }, 
+            },
             {
                 "id":"fabric_6mm_cut",
                 "machine_profile": null,
@@ -791,7 +791,7 @@
                     "passes": 3,
                     "useBlower": true
                 }
-            }, 
+            },
             {
                 "id":"fabric_fill",
                 "machine_profile": null,
@@ -826,7 +826,7 @@
         "id": "Acrylic-Black",
         "name": "Black Acrylic",
         "image": "plastic.png",
-        "notes": "Resut depends on type of Acrylic.",
+        "notes": "Acrylic, black and dark tinted.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -906,10 +906,10 @@
 
 
     {
-        "id": "Acrylic-Red/Orange",
-        "name": "Red/Orange Acrylic",
+        "id": "Acrylic-Red",
+        "name": "Red Acrylic",
         "image": "plastic.png",
-        "notes": "Result depends on type of Acrylic.",
+        "notes": "Red and Orange Acrylic material.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -925,9 +925,9 @@
         },
         "presets":[
             {
-                "id": "acrylic-red/ornge_3mm_cut",
+                "id": "acrylic-red_3mm_cut",
                 "machine_profile": null,
-                "name": "3mm Red/Orange Acrylic",
+                "name": "3mm Red Acrylic",
                 "type": "Laser Cut",
                 "params": {
                     "startHeight": 3,
@@ -939,9 +939,9 @@
                 }
             },
             {
-                "id": "acrylic-red/orange_6mm_cut",
+                "id": "acrylic-red_6mm_cut",
                 "machine_profile": null,
-                "name": "6mm Red/Orange Acrylic",
+                "name": "6mm Red Acrylic",
                 "type": "Laser Cut",
                 "params": {
                     "startHeight": 6,
@@ -953,9 +953,9 @@
                 }
             },
             {
-                "id": "acrylic-red/orange_fill",
+                "id": "acrylic-red_fill",
                 "machine_profile": null,
-                "name": "Fill Red/Orange Acrylic",
+                "name": "Fill Red Acrylic",
                 "type": "Laser Fill Path",
                 "params":{
                     "startHeight": 3,
@@ -967,9 +967,9 @@
                 }
             },
             {
-                "id": "acrylic-red/orange_raster",
+                "id": "acrylic-red_raster",
                 "machine_profile": null,
-                "name": "Raster Red/Orange Acrylic",
+                "name": "Raster Red Acrylic",
                 "type": "Laser Raster",
                 "params": {
                     "startHeight": 3,
@@ -989,10 +989,10 @@
 
 
     {
-        "id": "Acrylic-Yellow/Green",
-        "name": "Yellow/Green Acrylic",
+        "id": "Acrylic-Yellow",
+        "name": "Yellow Acrylic",
         "image": "plastic.png",
-        "notes": "Result depends on type of Acrylic.",
+        "notes": "Yellow and Green Acrylic material.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
@@ -1008,9 +1008,9 @@
         },
         "presets":[
             {
-                "id": "acrylic-yellow/green_3mm_cut",
+                "id": "acrylic-yellow_3mm_cut",
                 "machine_profile": null,
-                "name": "3mm Yellow/Green Acrylic",
+                "name": "3mm Yellow Acrylic",
                 "type": "Laser Cut",
                 "params": {
                     "startHeight": 3,
@@ -1022,9 +1022,9 @@
                 }
             },
             {
-                "id": "acrylic-yellow/green_6mm_cut",
+                "id": "acrylic-yellow_6mm_cut",
                 "machine_profile": null,
-                "name": "6mm Yellow/Green Acrylic",
+                "name": "6mm Yellow Acrylic",
                 "type": "Laser Cut",
                 "params": {
                     "startHeight": 6,
@@ -1036,9 +1036,9 @@
                 }
             },
             {
-                "id": "acrylic-yellow/green_fill",
+                "id": "acrylic-yellow_fill",
                 "machine_profile": null,
-                "name": "Fill Yellow/Green Acrylic",
+                "name": "Fill Yellow Acrylic",
                 "type": "Laser Fill Path",
                 "params":{
                     "startHeight": 3,
@@ -1050,9 +1050,9 @@
                 }
             },
             {
-                "id": "acrylic-yellow/green_raster",
+                "id": "acrylic-yellow_raster",
                 "machine_profile": null,
-                "name": "Raster Yellow/Green Acrylic",
+                "name": "Raster Yellow Acrylic",
                 "type": "Laser Raster",
                 "params": {
                     "startHeight": 3,
@@ -1069,13 +1069,13 @@
             }
         ]
     },
-    
-    
+
+
      {
         "id": "metal",
         "name": "Metal",
         "image": "metal.png",
-        "notes": "Anodised or Painted metals preferably.",
+        "notes": "Anodised or Painted metals preferably. No cutting.",
         "isEditable": false,
         "template": {
             "type": "Laser Fill Path",
@@ -1103,9 +1103,9 @@
                     "passes": 1,
                     "useBlower": true
                 }
-            }, 
+            },
             {
-                "id": "ametal_raster",
+                "id": "metal_raster",
                 "machine_profile": null,
                 "name": "Raster Metal",
                 "type": "Laser Raster",
