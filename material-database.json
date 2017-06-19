@@ -1091,6 +1091,20 @@
         },
         "presets":[
             {
+                "id":"metal_score_outline",
+                "machine_profile": null,
+                "name": "Outline/Score Metal",
+                "type": "Laser Cut",
+                "params": {
+                    "startHeight": 1,
+                    "laserPower": 100,
+                    "cutRate": 600,
+                    "segmentLength": 0,
+                    "passes": 1,
+                    "useBlower": true
+                }
+            },
+            {
                 "id":"metal_fill",
                 "machine_profile": null,
                 "name": "Fill Metal",
