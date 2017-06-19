@@ -214,7 +214,7 @@
                 }
             },
             {
-                "id": "wood_ply_raster",
+                "id": "wood_balsa_raster",
                 "machine_profile": null,
                 "name": "Raster Balsa",
                 "type": "Laser Raster",
