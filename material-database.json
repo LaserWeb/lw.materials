@@ -22,7 +22,7 @@
                 "id": "card_1mm_cut",
                 "machine_profile": null,
                 "name": "Copy Paper",
-			    "type": "Laser Cut",
+                "type": "Laser Cut",
                 "params": {
                     "startHeight": 1,
                     "laserPower": 40,
@@ -35,7 +35,7 @@
                 "id": "card_3mm_cut",
                 "machine_profile": null,
                 "name": "3mm Card",
-			    "type": "Laser Cut",
+                "type": "Laser Cut",
                 "params": {
                     "startHeight": 3,
                     "laserPower": 60,
@@ -48,7 +48,7 @@
                 "id": "card_6mm_cut",
                 "machine_profile": null,
                 "name": "6mm Card",
-			    "type": "Laser Cut",
+                "type": "Laser Cut",
                 "params": {
                     "startHeight": 6,
                     "laserPower": 100,
@@ -61,7 +61,7 @@
                 "id": "card_1mm_fill",
                 "machine_profile": null,
                 "name": "1mm Card",
-			    "type": "Laser Fill Path",
+                "type": "Laser Fill Path",
                 "params":{
                     "startHeight": 1,
                     "laserPower": 40,
@@ -74,7 +74,7 @@
                 "id": "card_1mm_raster",
                 "machine_profile": null,
                 "name": "1mm Card",
-			    "type": "Laser Raster",
+                "type": "Laser Raster",
                 "params":{
                     "startHeight": 1,
                     "cutRate": 2000,
@@ -108,7 +108,7 @@
                 "id": "plastic_3mm_cut",
                 "machine_profile": null,
                 "name": "3mm Acrylic",
-			    "type": "Laser Cut",
+                "type": "Laser Cut",
                 "params": {
                     "startHeight": 3,
                     "laserPower": 100,
@@ -121,7 +121,7 @@
                 "id":"plastic_6mm_cut",
                 "machine_profile": null,
                 "name": "6mm Acrylic",
-			    "type": "Laser Cut",
+                "type": "Laser Cut",
                 "params": {
                     "startHeight": 6,
                     "laserPower": 100,
@@ -134,7 +134,7 @@
                 "id":"plastic_3mm_fill",
                 "machine_profile": null,
                 "name": "Acrylic",
-			    "type": "Laser Fill Path",
+                "type": "Laser Fill Path",
                 "params":{
                     "startHeight": 3,
                     "laserPower": 40,
@@ -147,13 +147,108 @@
                 "id": "plastic_3mm_raster",
                 "machine_profile": null,
                 "name": "3mm Acrylic",
-			    "type": "Laser Raster",
+                "type": "Laser Raster",
                 "params":{
                     "startHeight": 3,
                     "cutRate": 2000,
                     "laserDiameter": 0.2,
                     "passes": 2,
                     "useBlower": true
+                }
+            }
+        ]
+    },
+    {
+        "id": "wood-mdf",
+        "name": "Wood-MDF",
+        "image": "wood.png",
+        "notes": "Resut depends on type of MDF.",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "startHeight": 3,
+                "laserPower": 100,
+                "cutRate": 200,
+                "segmentLength": 0,
+                "passes": 2,
+                "useBlower": true
+            }
+        },
+        "presets":[
+            {
+                "id": "wood_mdf_3mm_cut",
+                "machine_profile": null,
+                "name": "3mm MDF",
+                "type": "Laser Cut",
+                "params": {
+                    "startHeight": 3,
+                    "laserPower": 100,
+                    "cutRate": 200,
+                    "segmentLength": 0,
+                    "passes": 2,
+                    "useBlower": true
+                }
+            },
+                {
+                "id": "wood_mdf_4mm_cut",
+                "machine_profile": null,
+                "name": "4mm MDF",
+                "type": "Laser Cut",
+                "params": {
+                    "startHeight": 3,
+                    "laserPower": 100,
+                    "cutRate": 200,
+                    "segmentLength": 0,
+                    "passes": 3,
+                    "useBlower": true
+                }
+            },
+                {
+                "id": "wood_mdf_6mm_cut",
+                "machine_profile": null,
+                "name": "6mm MDF",
+                "type": "Laser Cut",
+                "params": {
+                    "startHeight": 3,
+                    "laserPower": 100,
+                    "cutRate": 200,
+                    "segmentLength": 0,
+                    "passes": 4,
+                    "useBlower": true
+                }
+            },
+            {
+                "id": "wood_mdf_fill",
+                "machine_profile": null,
+                "name": "3mm MDF",
+                "type": "Laser Fill Path",
+                "params":{
+                    "startHeight": 3,
+                    "laserPower": 50,
+                    "cutRate": 2000,
+                    "lineDistance": 0.2,
+                    "passes": 1,
+                    "useBlower": false
+                }
+            },
+            {
+                "id": "wood_mdf_raster",
+                "machine_profile": null,
+                "name": "MDF",
+                "type": "Laser Raster",
+                "params": {
+                    "startHeight": 3,
+                    "cutRate": 2000,
+                    "laserDiameter": 0.2,
+                    "passes": 1,
+                    "useBlower": false,
+                    "passDepth": 0,
+                    "laserPowerRange": {
+                        "min": 0,
+                        "max": 100
+                    }
                 }
             }
         ]
@@ -181,7 +276,7 @@
                 "id": "wood_3mm_cut",
                 "machine_profile": null,
                 "name": "3mm Plywood",
-			    "type": "Laser Cut",
+                "type": "Laser Cut",
                 "params": {
                     "startHeight": 3,
                     "laserPower": 100,
@@ -194,7 +289,7 @@
                 "id":"wood_6mm_cut",
                 "machine_profile": null,
                 "name": "6mm Plywood",
-			    "type": "Laser Cut",
+                "type": "Laser Cut",
                 "params": {
                     "startHeight": 6,
                     "laserPower": 100,
@@ -207,7 +302,7 @@
                 "id":"wood_3mm_fill",
                 "machine_profile": null,
                 "name": "Plywood",
-			    "type": "Laser Fill Path",
+                "type": "Laser Fill Path",
                 "params":{
                     "startHeight": 3,
                     "laserPower": 40,
@@ -220,7 +315,7 @@
                 "id": "wood_3mm_raster",
                 "machine_profile": null,
                 "name": "Plywood",
-			    "type": "Laser Raster",
+                "type": "Laser Raster",
                 "params": {
                     "startHeight": 3,
                     "cutRate": 2000,
@@ -254,7 +349,7 @@
                 "id": "leather_3mm_cut",
                 "machine_profile": null,
                 "name": "3mm Leather",
-			    "type": "Laser Cut",
+                "type": "Laser Cut",
                 "params": {
                     "startHeight": 3,
                     "laserPower": 100,
@@ -267,7 +362,7 @@
                 "id":"leather_6mm_cut",
                 "machine_profile": null,
                 "name": "6mm Leather",
-			    "type": "Laser Cut",
+                "type": "Laser Cut",
                 "params": {
                     "startHeight": 6,
                     "laserPower": 100,
@@ -280,7 +375,7 @@
                 "id":"leather_3mm_fill",
                 "machine_profile": null,
                 "name": "Leather",
-			    "type": "Laser Fill Path",
+                "type": "Laser Fill Path",
                 "params":{
                     "startHeight": 3,
                     "laserPower": 40,
@@ -293,7 +388,7 @@
                 "id": "leather_3mm_raster",
                 "machine_profile": null,
                 "name": "Leather",
-			    "type": "Laser Raster",
+                "type": "Laser Raster",
                 "params": {
                     "startHeight": 3,
                     "cutRate": 2000,
@@ -327,7 +422,7 @@
                 "id":"metal_1mm_fill",
                 "machine_profile": null,
                 "name": "Aluminum",
-			    "type": "Laser Fill Path",
+                "type": "Laser Fill Path",
                 "params": {
                     "startHeight": 1,
                     "laserPower": 40,
@@ -340,7 +435,7 @@
                 "id": "metal_1mm_raster",
                 "machine_profile": null,
                 "name": "Aluminum",
-			    "type": "Laser Raster",
+                "type": "Laser Raster",
                 "params": {
                     "startHeight": 1,
                     "cutRate": 1000,
