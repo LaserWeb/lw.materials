@@ -3,60 +3,34 @@
         "id": "wood-mdf",
         "name": "Wood-MDF",
         "image": "wood.png",
-        "notes": "Medium Density Fibreboard. Results may vary.",
+        "notes": "Medium Density Fibreboard.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
             "notes":"DEFAULT",
             "params": {
-                "startHeight": 3,
+                "actualHeight": 3,
+                "startHeight": 1.5,
                 "laserPower": 100,
                 "cutRate": 200,
-                "segmentLength": 0,
                 "passes": 2,
+                "passDepth": 0,
                 "useBlower": true
             }
         },
         "presets":[
-            {
-                "id": "wood_mdf_1mm_cut",
-                "machine_profile": null,
-                "name": "1mm MDF",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 1,
-                    "laserPower": 100,
-                    "cutRate": 400,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
             {
                 "id": "wood_mdf_3mm_cut",
                 "machine_profile": null,
                 "name": "3mm MDF",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 3,
+                    "actualHeight": 3,
+                    "startHeight": 1.5,
                     "laserPower": 100,
                     "cutRate": 200,
-                    "segmentLength": 0,
                     "passes": 2,
-                    "useBlower": true
-                }
-            },
-                {
-                "id": "wood_mdf_4mm_cut",
-                "machine_profile": null,
-                "name": "4mm MDF",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 4,
-                    "laserPower": 100,
-                    "cutRate": 200,
-                    "segmentLength": 0,
-                    "passes": 3,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
@@ -66,11 +40,12 @@
                 "name": "6mm MDF",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 6,
+                    "actualHeight": 6,
+                    "startHeight": 3,
                     "laserPower": 100,
-                    "cutRate": 200,
-                    "segmentLength": 0,
+                    "cutRate": 120,
                     "passes": 4,
+                    "passDepth": 0.25,
                     "useBlower": true
                 }
             },
@@ -80,11 +55,13 @@
                 "name": "Fill MDF",
                 "type": "Laser Fill Path",
                 "params":{
+                    "actualHeight": 3,
                     "startHeight": 3,
                     "laserPower": 50,
                     "cutRate": 2000,
                     "lineDistance": 0.2,
                     "passes": 1,
+                    "passDepth": 0,
                     "useBlower": false
                 }
             },
@@ -94,9 +71,10 @@
                 "name": "Raster MDF",
                 "type": "Laser Raster",
                 "params": {
+                    "actualHeight": 3,   
                     "startHeight": 3,
                     "cutRate": 2000,
-                    "laserDiameter": 0.2,
+                    "laserDiameter": 0.15,
                     "passes": 1,
                     "useBlower": false,
                     "passDepth": 0,
@@ -114,88 +92,64 @@
         "id": "wood-balsa",
         "name": "Wood-Balsa",
         "image": "wood.png",
-        "notes": "Results depend on type of Balsa wood.",
+        "notes": "Results depend on density of balsa. Monitor Carefully. Fire risk!",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
             "notes":"DEFAULT",
             "params": {
-                "startHeight": 3,
+                "actualHeight": 3,
+                "startHeight": 1.5,
                 "laserPower": 100,
-                "cutRate": 500,
-                "segmentLength": 0,
+                "cutRate": 300,
                 "passes": 1,
+                "passDepth": 0,
                 "useBlower": true
             }
         },
         "presets":[
             {
-                "id": "wood_balsa_1mm_cut",
+                "id": "wood_balsa_1.2mm_cut",
                 "machine_profile": null,
-                "name": "1mm Balsa",
+                "name": "1.2mm Balsa",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 1,
+                    "actualHeight": 1.2,
+                    "startHeight": 0.6,
                     "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
+                    "cutRate": 1000,
                     "passes": 1,
+                    "passDepth": 0,
+                    "useBlower": false
+                }
+            },
+            {
+                "id": "wood_balsa_3mm_cut",
+                "machine_profile": null,
+                "name": "3mm Balsa",
+                "type": "Laser Cut",
+                "params": {
+                    "actualHeight": 3,
+                    "startHeight": 1.5,
+                    "laserPower": 100,
+                    "cutRate": 300,
+                    "passes": 1,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
             {
-                "id": "wood_ply_2mm_cut",
+                "id": "wood_balsa_5mm_cut",
                 "machine_profile": null,
-                "name": "2mm Balsa",
+                "name": "5mm Balsa",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 2,
-                    "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-                {
-                "id": "wood_balsa_4mm_cut",
-                "machine_profile": null,
-                "name": "4mm Balsa",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 4,
+                    "actualHeight": 5,
+                    "startHeight": 2.5,
                     "laserPower": 100,
                     "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-                {
-                "id": "wood_balsa_6mm_cut",
-                "machine_profile": null,
-                "name": "6mm Balsa",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 6,
-                    "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "wood_balsa_10mm_cut",
-                "machine_profile": null,
-                "name": "10mm Balsa",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 10,
-                    "laserPower": 100,
-                    "cutRate": 200,
-                    "segmentLength": 0,
-                    "passes": 1,
+                    "passes": 2,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
@@ -205,12 +159,14 @@
                 "name": "Fill Balsa",
                 "type": "Laser Fill Path",
                 "params":{
+                    "actualHeight": 3,
                     "startHeight": 3,
-                    "laserPower": 30,
+                    "laserPower": 50,
                     "cutRate": 2000,
                     "lineDistance": 0.2,
                     "passes": 1,
-                    "useBlower": false
+                    "passDepth": 0,
+                    "useBlower": true
                 }
             },
             {
@@ -219,15 +175,16 @@
                 "name": "Raster Balsa",
                 "type": "Laser Raster",
                 "params": {
+                    "actualHeight": 3,
                     "startHeight": 3,
-                    "cutRate": 2000,
+                    "cutRate": 2500,
                     "laserDiameter": 0.2,
                     "passes": 1,
-                    "useBlower": false,
                     "passDepth": 0,
+                    "useBlower": true,
                     "laserPowerRange": {
                         "min": 0,
-                        "max": 50
+                        "max": 60
                     }
                 }
             }
@@ -241,17 +198,18 @@
         "id": "wood-ply",
         "name": "Wood-Ply",
         "image": "wood.png",
-        "notes": "Laminated wood materials.",
+        "notes": "Laser friendly plywood.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
             "notes":"DEFAULT",
             "params": {
-                "startHeight": 3,
+                "actualHeight": 3,
+                "startHeight": 1.5,
                 "laserPower": 100,
                 "cutRate": 200,
-                "segmentLength": 0,
                 "passes": 2,
+                "passDepth": 0,
                 "useBlower": true
             }
         },
@@ -259,372 +217,73 @@
             {
                 "id": "wood_ply_1mm_cut",
                 "machine_profile": null,
-                "name": "1mm Ply",
+                "name": "1mm Plywood",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 1,
+                    "actualHeight": 1,
+                    "startHeight": 0.5,
                     "laserPower": 100,
-                    "cutRate": 400,
-                    "segmentLength": 0,
+                    "cutRate": 300,
                     "passes": 1,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
             {
                 "id": "wood_ply_3mm_cut",
                 "machine_profile": null,
-                "name": "3mm Ply",
+                "name": "3mm Plywood",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 3,
+                    "actualHeight": 3,
+                    "startHeight": 1.5,
                     "laserPower": 100,
                     "cutRate": 200,
-                    "segmentLength": 0,
                     "passes": 2,
-                    "useBlower": true
-                }
-            },
-                {
-                "id": "wood_ply_4mm_cut",
-                "machine_profile": null,
-                "name": "4mm Ply",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 4,
-                    "laserPower": 100,
-                    "cutRate": 200,
-                    "segmentLength": 0,
-                    "passes": 3,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
                 {
                 "id": "wood_ply_6mm_cut",
                 "machine_profile": null,
-                "name": "6mm Ply",
+                "name": "6mm Plywood",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 6,
+                    "actualHeight": 6,
+                    "startHeight": 3,
                     "laserPower": 100,
-                    "cutRate": 200,
-                    "segmentLength": 0,
+                    "cutRate": 120,
                     "passes": 4,
+                    "passDepth": 0.25,
                     "useBlower": true
                 }
             },
             {
                 "id": "wood_ply_fill",
                 "machine_profile": null,
-                "name": "Fill Ply",
+                "name": "Fill Plywood",
                 "type": "Laser Fill Path",
                 "params":{
+                    "actualHeight": 3,
                     "startHeight": 3,
-                    "laserPower": 50,
+                    "laserPower": 70,
                     "cutRate": 2000,
-                    "lineDistance": 0.2,
+                    "lineDistance": 0.15,
                     "passes": 1,
+                    "passDepth": 0,
                     "useBlower": false
                 }
             },
             {
                 "id": "wood_ply_raster",
                 "machine_profile": null,
-                "name": "Raster Ply",
+                "name": "Raster Plywood",
                 "type": "Laser Raster",
                 "params": {
+                    "actualHeight": 3,   
                     "startHeight": 3,
                     "cutRate": 2000,
-                    "laserDiameter": 0.2,
-                    "passes": 1,
-                    "useBlower": false,
-                    "passDepth": 0,
-                    "laserPowerRange": {
-                        "min": 0,
-                        "max": 100
-                    }
-                }
-            }
-        ]
-    },
-
-
-    {
-        "id": "paper",
-        "name": "Paper",
-        "image": "card.png",
-        "notes": "Result depends on type of Paper.",
-        "isEditable": false,
-        "template": {
-            "type": "Laser Cut",
-            "notes":"DEFAULT",
-            "params": {
-                "startHeight": 3,
-                "laserPower": 100,
-                "cutRate": 2000,
-                "segmentLength": 0,
-                "passes": 1,
-                "useBlower": true
-            }
-        },
-        "presets":[
-            {
-                "id": "paper_0.5mm_cut",
-                "machine_profile": null,
-                "name": "Thin Paper",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 0.5,
-                    "laserPower": 100,
-                    "cutRate": 2500,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "paper_1mm_cut",
-                "machine_profile": null,
-                "name": "1mm paper",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 1,
-                    "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-                {
-                "id": "paper_2mm_cut",
-                "machine_profile": null,
-                "name": "2mm Paper",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 2,
-                    "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "paper_fill",
-                "machine_profile": null,
-                "name": "Fill Paper",
-                "type": "Laser Fill Path",
-                "params":{
-                    "startHeight": 1,
-                    "laserPower": 30,
-                    "cutRate": 2000,
-                    "lineDistance": 0.2,
-                    "passes": 1,
-                    "useBlower": false
-                }
-            },
-            {
-                "id": "paper_raster",
-                "machine_profile": null,
-                "name": "Raster Paper",
-                "type": "Laser Raster",
-                "params": {
-                    "startHeight": 1,
-                    "cutRate": 2500,
-                    "laserDiameter": 0.2,
-                    "passes": 1,
-                    "useBlower": false,
-                    "passDepth": 0,
-                    "laserPowerRange": {
-                        "min": 0,
-                        "max": 50
-                    }
-                }
-            }
-        ]
-    },
-
-
-    {
-        "id": "card",
-        "name": "Card",
-        "image": "card.png",
-        "notes": "Result depends on type of Card.",
-        "isEditable": false,
-        "template": {
-            "type": "Laser Cut",
-            "notes":"DEFAULT",
-            "params": {
-                "startHeight": 3,
-                "laserPower": 100,
-                "cutRate": 2000,
-                "segmentLength": 0,
-                "passes": 1,
-                "useBlower": true
-            }
-        },
-        "presets":[
-            {
-                "id": "card_0.5mm_cut",
-                "machine_profile": null,
-                "name": "Thin Card",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 0.5,
-                    "laserPower": 100,
-                    "cutRate": 2500,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "card_1mm_cut",
-                "machine_profile": null,
-                "name": "1mm Card",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 1,
-                    "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-                {
-                "id": "card_2mm_cut",
-                "machine_profile": null,
-                "name": "2mm Card",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 2,
-                    "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "card_3mm_cut",
-                "machine_profile": null,
-                "name": "3mm Card",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 3,
-                    "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "card_fill",
-                "machine_profile": null,
-                "name": "Fill Card",
-                "type": "Laser Fill Path",
-                "params":{
-                    "startHeight": 1,
-                    "laserPower": 30,
-                    "cutRate": 2000,
-                    "lineDistance": 0.2,
-                    "passes": 1,
-                    "useBlower": false
-                }
-            },
-            {
-                "id": "card_raster",
-                "machine_profile": null,
-                "name": "Raster Card",
-                "type": "Laser Raster",
-                "params": {
-                    "startHeight": 1,
-                    "cutRate": 2500,
-                    "laserDiameter": 0.2,
-                    "passes": 1,
-                    "useBlower": false,
-                    "passDepth": 0,
-                    "laserPowerRange": {
-                        "min": 0,
-                        "max": 50
-                    }
-                }
-            }
-        ]
-    },
-
-
-    {
-        "id": "corrugated-card",
-        "name": "Corrugated Card",
-        "image": "card.png",
-        "notes": "Cardboard and Corrugated Card. Results may vary.",
-        "isEditable": false,
-        "template": {
-            "type": "Laser Cut",
-            "notes":"DEFAULT",
-            "params": {
-                "startHeight": 3,
-                "laserPower": 100,
-                "cutRate": 500,
-                "segmentLength": 0,
-                "passes": 1,
-                "useBlower": true
-            }
-        },
-        "presets":[
-            {
-                "id": "corrugated-card_3mm_cut",
-                "machine_profile": null,
-                "name": "3mm Currugated Card",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 3,
-                    "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 2,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "corrugated-card_6mm_cut",
-                "machine_profile": null,
-                "name": "6mm Currugated Card",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 6,
-                    "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 4,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "corrugated-card_fill",
-                "machine_profile": null,
-                "name": "Fill Corrugated-Card",
-                "type": "Laser Fill Path",
-                "params":{
-                    "startHeight": 1,
-                    "laserPower": 30,
-                    "cutRate": 2500,
-                    "lineDistance": 0.15,
-                    "passes": 1,
-                    "useBlower": false
-                }
-            },
-            {
-                "id": "corrugated-card_raster",
-                "machine_profile": null,
-                "name": "Raster Corrugated-Card",
-                "type": "Laser Raster",
-                "params": {
-                    "startHeight": 1,
-                    "cutRate": 2500,
                     "laserDiameter": 0.15,
                     "passes": 1,
                     "useBlower": false,
@@ -638,22 +297,230 @@
         ]
     },
 
-
     {
-        "id": "leather",
-        "name": "Leather",
-        "image": "leather.png",
-        "notes": "Leather materials.",
+        "id": "paper-thin",
+        "name": "Thin Paper",
+        "image": "card.png",
+        "notes": "Thin paper, 80-120 GSM.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
             "notes":"DEFAULT",
             "params": {
-                "startHeight": 3,
-                "laserPower": 40,
-                "cutRate": 500,
-                "segmentLength": 0,
+                "actualHeight": 0.1,   
+                "startHeight": 0,
+                "laserPower": 100,
+                "cutRate": 1500,
                 "passes": 1,
+                "passDepth": 0,
+                "useBlower": false
+            }
+        },
+        "presets":[
+                {
+                "id": "paper-thin_cut",
+                "machine_profile": null,
+                "name": "Thin Paper",
+                "type": "Laser Cut",
+                "params": {
+                    "actualHeight": 0.1,
+                    "startHeight": 0,
+                    "laserPower": 100,
+                    "cutRate": 1500,
+                    "passes": 1,
+                    "passDepth": 0,
+                    "useBlower": false
+                }
+            }
+      ]
+    },
+
+    {
+        "id": "paper-medium",
+        "name": "Medium Paper",
+        "image": "card.png",
+        "notes": "Medium paper, 150-300 GSM.",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "actualHeight": 0.25,   
+                "startHeight": 0,
+                "laserPower": 100,
+                "cutRate": 800,
+                "passes": 1,
+                "passDepth": 0,
+                "useBlower": false
+            }
+        },
+        "presets":[
+                {
+                "id": "paper-medium_cut",
+                "machine_profile": null,
+                "name": "Medium Paper",
+                "type": "Laser Cut",
+                "params": {
+                    "actualHeight": 0.25,
+                    "startHeight": 1,
+                    "laserPower": 100,
+                    "cutRate": 800,
+                    "passes": 1,
+                    "passDepth": 0,
+                    "useBlower": true
+                }
+            }
+      ]
+    },
+
+
+
+
+
+    {
+        "id": "card-posterboard",
+        "name": "Card-PosterBoard",
+        "image": "card.png",
+        "notes": "Thicker card.",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "actualHeight": 1.25,
+                "startHeight": 1,
+                "laserPower": 100,
+                "cutRate": 350,
+                "passes": 1,
+                "passDepth": 0,
+                "useBlower": true
+            }
+        },
+        "presets":[
+            {
+                "id": "posterboard_cut",
+                "machine_profile": null,
+                "name": "Posterboard",
+                "type": "Laser Cut",
+                "params": {
+                    "actualHeight": 1.25,
+                    "startHeight": 1,
+                    "laserPower": 100,
+                    "cutRate": 350,
+                    "passes": 1,
+                    "passDepth": 0,
+                    "useBlower": true
+                }
+            }
+        ]
+    },
+
+
+    {
+        "id": "corrugated-card",
+        "name": "Corrugated Card",
+        "image": "card.png",
+        "notes": "Corrugated Cardboard. Monitor Carefully. Fire risk!",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "actualHeight": 3,
+                "startHeight": 1.5,
+                "laserPower": 100,
+                "cutRate": 300,
+                "passes": 1,
+                "passDepth": 0,
+                "useBlower": true
+            }
+        },
+        "presets":[
+            {
+                "id": "corrugated-card_3mm_cut",
+                "machine_profile": null,
+                "name": "3mm Currugated Card",
+                "type": "Laser Cut",
+                "params": {
+                    "actualHeight": 3,
+                    "startHeight": 1.5,
+                    "laserPower": 100,
+                    "cutRate": 300,
+                    "passes": 1,
+                    "passDepth": 0,
+                    "useBlower": true
+                }
+            },
+            {
+                "id": "corrugated-card_6mm_cut",
+                "machine_profile": null,
+                "name": "6mm Currugated Card",
+                "type": "Laser Cut",
+                "params": {
+                    "actualHeight": 6,
+                    "startHeight": 3,
+                    "laserPower": 100,
+                    "cutRate": 300,
+                    "passes": 2,
+                    "passDepth": 0.25,
+                    "useBlower": true
+                }
+            },
+            {
+                "id": "corrugated-card_fill",
+                "machine_profile": null,
+                "name": "Fill Corrugated-Card",
+                "type": "Laser Fill Path",
+                "params":{
+                    "actualHeight": 3,
+                    "startHeight": 3,
+                    "laserPower": 60,
+                    "cutRate": 2000,
+                    "lineDistance": 0.15,
+                    "passes": 1,
+                    "passDepth": 0,
+                    "useBlower": false
+                }
+            },
+            {
+                "id": "corrugated-card_raster",
+                "machine_profile": null,
+                "name": "Raster Corrugated-Card",
+                "type": "Laser Raster",
+                "params": {
+                    "actualHeight": 3,
+                    "startHeight": 3,
+                    "cutRate": 2000,
+                    "laserDiameter": 0.15,
+                    "passes": 1,
+                    "useBlower": false,
+                    "passDepth": 0,
+                    "laserPowerRange": {
+                        "min": 20,
+                        "max": 60
+                    }
+                }
+            }
+        ]
+    },
+
+
+    {
+        "id": "leather",
+        "name": "Leather",
+        "image": "leather.png",
+        "notes": "Leather. Results depend on color and treatment.",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "actualHeight": 1,
+                "startHeight": 0.5,
+                "laserPower": 100,
+                "cutRate": 300,
+                "passes": 1,
+                "passDepth": 0,
                 "useBlower": true
             }
         },
@@ -664,39 +531,42 @@
                 "name": "1mm Leather",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 1,
+                    "actualHeight": 1,
+                    "startHeight": 0.5,
                     "laserPower": 100,
                     "cutRate": 300,
-                    "segmentLength": 0,
                     "passes": 1,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
             {
-                "id":"leather_2mm_cut",
+                "id":"leather_2.5mm_cut",
                 "machine_profile": null,
-                "name": "2mm Leather",
+                "name": "2.5mm Leather",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 2,
+                    "actualHeight": 2.5,
+                    "startHeight": 1.25,
                     "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 2,
+                    "cutRate": 200,
+                    "passes": 4,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
             {
-                "id":"leather_3mm_cut",
+                "id":"leather_3.6mm_cut",
                 "machine_profile": null,
-                "name": "3mm Leather",
+                "name": "3.6mm Leather",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 3,
+                    "actualHeight": 3.6,
+                    "startHeight": 1.8,
                     "laserPower": 100,
                     "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 3,
+                    "passes": 5,
+                    "passDepth": 0.2,
                     "useBlower": true
                 }
             },
@@ -707,11 +577,13 @@
                 "name": "Fill Leather",
                 "type": "Laser Fill Path",
                 "params":{
+                    "actualHeight": 3,
                     "startHeight": 3,
                     "laserPower": 40,
                     "cutRate": 2000,
-                    "lineDistance": 0.5,
+                    "lineDistance": 0.15,
                     "passes": 1,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             }, {
@@ -720,11 +592,17 @@
                 "name": "Raster Leather",
                 "type": "Laser Raster",
                 "params": {
+                    "actualHeight": 3.6,
                     "startHeight": 3,
                     "cutRate": 2000,
-                    "laserDiameter": 0.2,
+                    "laserDiameter": 0.15,
                     "passes": 1,
-                    "useBlower": true
+                    "passDepth": 0,
+                    "useBlower": true,
+                    "laserPowerRange": {
+                        "min": 0,
+                        "max": 50
+                    }
                 }
             }
         ]
@@ -732,89 +610,52 @@
 
 
     {
-        "id": "fabric",
-        "name": "Fabric",
+        "id": "felt",
+        "name": "Felt, 2ply",
         "image": "leather.png",
-        "notes": "Fabric materials.",
+        "notes": "2ply stiffened felt.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
             "notes":"DEFAULT",
             "params": {
-                "startHeight": 3,
-                "laserPower": 40,
+                "actualHeight": 2.5,
+                "startHeight": 1.25,
+                "laserPower": 100,
                 "cutRate": 500,
-                "segmentLength": 0,
-                "passes": 1,
+                "passes": 2,
+                "passDepth": 0,
                 "useBlower": true
             }
         },
         "presets":[
             {
-                "id": "fabric_1mm_cut",
+                "id": "fabric_black-blue_cut",
                 "machine_profile": null,
-                "name": "1mm Fabric",
+                "name": "Black/Blue Felt",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 1,
+                    "actualHeight": 2.5,
+                    "startHeight": 1.25,
                     "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
+                    "cutRate": 350,
                     "passes": 1,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
             {
-                "id":"fabric_3mm_cut",
+                "id":"fabric_red-purple_cut",
                 "machine_profile": null,
-                "name": "3mm Fabric",
+                "name": "Red/Purple Felt",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 3,
+                    "actualHeight": 2.5,
+                    "startHeight": 1.25,
                     "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 3,
-                    "useBlower": true
-                }
-            },
-            {
-                "id":"fabric_6mm_cut",
-                "machine_profile": null,
-                "name": "6mm Fabric",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 6,
-                    "laserPower": 100,
-                    "cutRate": 300,
-                    "segmentLength": 0,
-                    "passes": 3,
-                    "useBlower": true
-                }
-            },
-            {
-                "id":"fabric_fill",
-                "machine_profile": null,
-                "name": "Fill Fabric",
-                "type": "Laser Fill Path",
-                "params":{
-                    "startHeight": 3,
-                    "laserPower": 40,
-                    "cutRate": 2000,
-                    "lineDistance": 0.5,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            }, {
-                "id": "fabric_raster",
-                "machine_profile": null,
-                "name": "Raster Fabric",
-                "type": "Laser Raster",
-                "params": {
-                    "startHeight": 3,
-                    "cutRate": 2000,
-                    "laserDiameter": 0.2,
-                    "passes": 1,
+                    "cutRate": 350,
+                    "passes": 2,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             }
@@ -826,17 +667,18 @@
         "id": "Acrylic-Black",
         "name": "Black Acrylic",
         "image": "plastic.png",
-        "notes": "Acrylic, black and dark tinted.",
+        "notes": "Black opaque acrylic.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
             "notes":"DEFAULT",
             "params": {
-                "startHeight": 3,
+                "actualHeight": 3,
+                "startHeight": 1.5,
                 "laserPower": 100,
-                "cutRate": 500,
-                "segmentLength": 0,
+                "cutRate": 150,
                 "passes": 2,
+                "passDepth": 0,
                 "useBlower": true
             }
         },
@@ -847,11 +689,12 @@
                 "name": "3mm Black Acrylic",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 3,
+                    "actualHeight": 3,
+                    "startHeight": 1.5,
                     "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
-                    "passes": 1,
+                    "cutRate": 150,
+                    "passes": 2,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
@@ -861,11 +704,12 @@
                 "name": "6mm Black Acrylic",
                 "type": "Laser Cut",
                 "params": {
-                    "startHeight": 6,
+                    "actualHeight": 6,
+                    "startHeight": 3,
                     "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
-                    "passes": 1,
+                    "cutRate": 150,
+                    "passes": 4,
+                    "passDepth": 0.2,
                     "useBlower": true
                 }
             },
@@ -875,11 +719,13 @@
                 "name": "Fill Black Acrylic",
                 "type": "Laser Fill Path",
                 "params":{
+                    "actualHeight": 3,
                     "startHeight": 3,
-                    "laserPower": 30,
-                    "cutRate": 2000,
+                    "laserPower": 80,
+                    "cutRate": 1000,
                     "lineDistance": 0.2,
                     "passes": 1,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
@@ -889,15 +735,15 @@
                 "name": "Raster Black Acrylic",
                 "type": "Laser Raster",
                 "params": {
+                    "actualHeight": 3,
                     "startHeight": 3,
-                    "cutRate": 2000,
+                    "cutRate": 1000,
                     "laserDiameter": 0.2,
                     "passes": 1,
                     "useBlower": true,
-                    "passDepth": 0,
                     "laserPowerRange": {
                         "min": 0,
-                        "max": 50
+                        "max": 80
                     }
                 }
             }
@@ -906,81 +752,87 @@
 
 
     {
-        "id": "Acrylic-Red",
-        "name": "Red Acrylic",
+        "id": "Acrylic-Colored",
+        "name": "Colored Acrylic",
         "image": "plastic.png",
-        "notes": "Red and Orange Acrylic material.",
+        "notes": "Red, Orange, Yellow, Green opaque acrylic.",
         "isEditable": false,
         "template": {
             "type": "Laser Cut",
             "notes":"DEFAULT",
             "params": {
-                "startHeight": 3,
+                "actualHeight": 3,
+                "startHeight": 1.5,
                 "laserPower": 100,
-                "cutRate": 500,
-                "segmentLength": 0,
-                "passes": 2,
+                "cutRate": 150,
+                "passes": 4,
+                "passDepth": 0.1,
                 "useBlower": true
             }
         },
         "presets":[
             {
-                "id": "acrylic-red_3mm_cut",
+                "id": "acrylic-colored_3mm_cut",
                 "machine_profile": null,
-                "name": "3mm Red Acrylic",
+                "name": "3mm Colored Acrylic",
                 "type": "Laser Cut",
                 "params": {
+                    "actualHeight": 3,
+                    "startHeight": 1.5,
+                    "laserPower": 100,
+                    "cutRate": 150,
+                    "passes": 4,
+                    "passDepth": 0.1,
+                    "useBlower": true
+                }
+            },
+            {
+                "id": "acrylic-colored_6mm_cut",
+                "machine_profile": null,
+                "name": "6mm Colored Acrylic",
+                "type": "Laser Cut",
+                "params": {
+                    "actualHeight": 6,
                     "startHeight": 3,
                     "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
-                    "passes": 1,
+                    "cutRate": 150,
+                    "passes": 4,
+                    "passDepth": 0.2,
                     "useBlower": true
                 }
             },
             {
-                "id": "acrylic-red_6mm_cut",
+                "id": "acrylic-colored_fill",
                 "machine_profile": null,
-                "name": "6mm Red Acrylic",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 6,
-                    "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "acrylic-red_fill",
-                "machine_profile": null,
-                "name": "Fill Red Acrylic",
+                "name": "Fill Colored Acrylic",
                 "type": "Laser Fill Path",
                 "params":{
+                    "actualHeight": 3,
                     "startHeight": 3,
-                    "laserPower": 30,
-                    "cutRate": 2000,
+                    "laserPower": 100,
+                    "cutRate": 1000,
                     "lineDistance": 0.2,
                     "passes": 1,
+                    "passDepth": 0,
                     "useBlower": true
                 }
             },
             {
-                "id": "acrylic-red_raster",
+                "id": "acrylic-colored_raster",
                 "machine_profile": null,
-                "name": "Raster Red Acrylic",
+                "name": "Raster Colored Acrylic",
                 "type": "Laser Raster",
                 "params": {
+                    "actualHeight": 3,
                     "startHeight": 3,
-                    "cutRate": 2000,
+                    "cutRate": 1000,
                     "laserDiameter": 0.2,
                     "passes": 1,
-                    "useBlower": true,
                     "passDepth": 0,
+                    "useBlower": true,
                     "laserPowerRange": {
                         "min": 0,
-                        "max": 50
+                        "max": 100
                     }
                 }
             }
@@ -988,134 +840,43 @@
     },
 
 
-    {
-        "id": "Acrylic-Yellow",
-        "name": "Yellow Acrylic",
-        "image": "plastic.png",
-        "notes": "Yellow and Green Acrylic material.",
-        "isEditable": false,
-        "template": {
-            "type": "Laser Cut",
-            "notes":"DEFAULT",
-            "params": {
-                "startHeight": 3,
-                "laserPower": 100,
-                "cutRate": 500,
-                "segmentLength": 0,
-                "passes": 2,
-                "useBlower": true
-            }
-        },
-        "presets":[
-            {
-                "id": "acrylic-yellow_3mm_cut",
-                "machine_profile": null,
-                "name": "3mm Yellow Acrylic",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 3,
-                    "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "acrylic-yellow_6mm_cut",
-                "machine_profile": null,
-                "name": "6mm Yellow Acrylic",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 6,
-                    "laserPower": 100,
-                    "cutRate": 500,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "acrylic-yellow_fill",
-                "machine_profile": null,
-                "name": "Fill Yellow Acrylic",
-                "type": "Laser Fill Path",
-                "params":{
-                    "startHeight": 3,
-                    "laserPower": 30,
-                    "cutRate": 2000,
-                    "lineDistance": 0.2,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
-            {
-                "id": "acrylic-yellow_raster",
-                "machine_profile": null,
-                "name": "Raster Yellow Acrylic",
-                "type": "Laser Raster",
-                "params": {
-                    "startHeight": 3,
-                    "cutRate": 2000,
-                    "laserDiameter": 0.2,
-                    "passes": 1,
-                    "useBlower": true,
-                    "passDepth": 0,
-                    "laserPowerRange": {
-                        "min": 0,
-                        "max": 50
-                    }
-                }
-            }
-        ]
-    },
 
 
      {
         "id": "metal",
         "name": "Metal",
         "image": "metal.png",
-        "notes": "Anodised or Painted metals preferably. No cutting.",
+        "notes": "Anodised or Painted metals. Engraving only.",
         "isEditable": false,
         "template": {
             "type": "Laser Fill Path",
             "notes":"DEFAULT",
             "params": {
-                "startHeight": 3,
-                "laserPower": 40,
-                "cutRate": 1000,
-                "lineDistance": 0.5,
+                "actualHeight": 1,
+                "startHeight": 1,
+                "laserPower": 100,
+                "cutRate": 500,
+                "lineDistance": 0.15,
                 "passes": 1,
+                "passDepth": 0,
                 "useBlower": false
             }
         },
         "presets":[
-            {
-                "id":"metal_score_outline",
-                "machine_profile": null,
-                "name": "Outline/Score Metal",
-                "type": "Laser Cut",
-                "params": {
-                    "startHeight": 1,
-                    "laserPower": 100,
-                    "cutRate": 600,
-                    "segmentLength": 0,
-                    "passes": 1,
-                    "useBlower": true
-                }
-            },
             {
                 "id":"metal_fill",
                 "machine_profile": null,
                 "name": "Fill Metal",
                 "type": "Laser Fill Path",
                 "params": {
+                    "actualHeight": 1,
                     "startHeight": 1,
-                    "laserPower": 40,
-                    "cutRate": 1000,
-                    "lineDistance": 0.5,
+                    "laserPower": 100,
+                    "cutRate": 500,
+                    "lineDistance": 0.15,
                     "passes": 1,
-                    "useBlower": true
+                    "passDepth": 0,
+                    "useBlower": false
                 }
             },
             {
@@ -1124,16 +885,57 @@
                 "name": "Raster Metal",
                 "type": "Laser Raster",
                 "params": {
+                    "actualHeight": 1,
                     "startHeight": 1,
                     "cutRate": 2000,
-                    "laserDiameter": 0.2,
+                    "laserDiameter": 0.15,
                     "passes": 1,
-                    "useBlower": true,
                     "passDepth": 0,
+                    "useBlower": false,
                     "laserPowerRange": {
-                        "min": 0,
-                        "max": 50
+                        "min": 25,
+                        "max": 100
                     }
+                }
+            }
+        ]
+    },
+
+
+
+         {
+        "id": "seaweed",
+        "name": "Seaweed",
+        "image": "metal.png",
+        "notes": "Toasted Seaweed / Nori.",
+        "isEditable": false,
+        "template": {
+            "type": "Laser Cut",
+            "notes":"DEFAULT",
+            "params": {
+                "actualHeight": 1,
+                "startHeight": 0.5,
+                "laserPower": 100,
+                "cutRate": 2000,
+                "passes": 1,
+                "passDepth": 0,
+                "useBlower": false
+            }
+        },
+        "presets":[
+            {
+                "id": "seaweed_cut",
+                "machine_profile": null,
+                "name": "Seaweed",
+                "type": "Laser Cut",
+                "params": {
+                    "actualHeight": 1,
+                    "startHeight": 0.5,
+                    "laserPower": 100,
+                    "cutRate": 2000,
+                    "passes": 1,
+                    "passDepth": 0,
+                    "useBlower": false
                 }
             }
         ]
