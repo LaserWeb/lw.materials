@@ -21,7 +21,7 @@
         "presets":[
             {
                 "id": "wood_mdf_3mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "3mm MDF",
                 "type": "Laser Cut",
                 "params": {
@@ -36,7 +36,7 @@
             },
                 {
                 "id": "wood_mdf_6mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "6mm MDF",
                 "type": "Laser Cut",
                 "params": {
@@ -51,7 +51,7 @@
             },
             {
                 "id": "wood_mdf_fill",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Fill MDF",
                 "type": "Laser Fill Path",
                 "params":{
@@ -67,7 +67,7 @@
             },
             {
                 "id": "wood_mdf_raster",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Raster MDF",
                 "type": "Laser Raster",
                 "params": {
@@ -110,7 +110,7 @@
         "presets":[
             {
                 "id": "wood_balsa_1.2mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "1.2mm Balsa",
                 "type": "Laser Cut",
                 "params": {
@@ -125,7 +125,7 @@
             },
             {
                 "id": "wood_balsa_3mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "3mm Balsa",
                 "type": "Laser Cut",
                 "params": {
@@ -140,7 +140,7 @@
             },
             {
                 "id": "wood_balsa_5mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "5mm Balsa",
                 "type": "Laser Cut",
                 "params": {
@@ -155,7 +155,7 @@
             },
             {
                 "id": "wood_balsa_fill",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Fill Balsa",
                 "type": "Laser Fill Path",
                 "params":{
@@ -171,7 +171,7 @@
             },
             {
                 "id": "wood_balsa_raster",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Raster Balsa",
                 "type": "Laser Raster",
                 "params": {
@@ -190,10 +190,6 @@
             }
         ]
     },
-
-
-
-
     {
         "id": "wood-ply",
         "name": "Wood-Ply",
@@ -216,7 +212,7 @@
         "presets":[
             {
                 "id": "wood_ply_1mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "1mm Plywood",
                 "type": "Laser Cut",
                 "params": {
@@ -231,7 +227,7 @@
             },
             {
                 "id": "wood_ply_3mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "3mm Plywood",
                 "type": "Laser Cut",
                 "params": {
@@ -246,7 +242,7 @@
             },
                 {
                 "id": "wood_ply_6mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "6mm Plywood",
                 "type": "Laser Cut",
                 "params": {
@@ -261,7 +257,7 @@
             },
             {
                 "id": "wood_ply_fill",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Fill Plywood",
                 "type": "Laser Fill Path",
                 "params":{
@@ -277,7 +273,7 @@
             },
             {
                 "id": "wood_ply_raster",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Raster Plywood",
                 "type": "Laser Raster",
                 "params": {
@@ -319,7 +315,7 @@
         "presets":[
                 {
                 "id": "paper-thin_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Thin Paper",
                 "type": "Laser Cut",
                 "params": {
@@ -333,8 +329,7 @@
                 }
             }
       ]
-    },
-
+    }, 
     {
         "id": "paper-medium",
         "name": "Medium Paper",
@@ -357,7 +352,7 @@
         "presets":[
                 {
                 "id": "paper-medium_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Medium Paper",
                 "type": "Laser Cut",
                 "params": {
@@ -399,7 +394,7 @@
         "presets":[
             {
                 "id": "posterboard_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Posterboard",
                 "type": "Laser Cut",
                 "params": {
@@ -438,7 +433,7 @@
         "presets":[
             {
                 "id": "corrugated-card_3mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "3mm Currugated Card",
                 "type": "Laser Cut",
                 "params": {
@@ -453,7 +448,7 @@
             },
             {
                 "id": "corrugated-card_6mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "6mm Currugated Card",
                 "type": "Laser Cut",
                 "params": {
@@ -468,7 +463,7 @@
             },
             {
                 "id": "corrugated-card_fill",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Fill Corrugated-Card",
                 "type": "Laser Fill Path",
                 "params":{
@@ -484,7 +479,7 @@
             },
             {
                 "id": "corrugated-card_raster",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Raster Corrugated-Card",
                 "type": "Laser Raster",
                 "params": {
@@ -527,7 +522,7 @@
         "presets":[
             {
                 "id": "leather_1mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "1mm Leather",
                 "type": "Laser Cut",
                 "params": {
@@ -542,7 +537,7 @@
             },
             {
                 "id":"leather_2.5mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "2.5mm Leather",
                 "type": "Laser Cut",
                 "params": {
@@ -557,7 +552,7 @@
             },
             {
                 "id":"leather_3.6mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "3.6mm Leather",
                 "type": "Laser Cut",
                 "params": {
@@ -573,7 +568,7 @@
 
             {
                 "id":"leather_fill",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Fill Leather",
                 "type": "Laser Fill Path",
                 "params":{
@@ -588,7 +583,7 @@
                 }
             }, {
                 "id": "leather_raster",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Raster Leather",
                 "type": "Laser Raster",
                 "params": {
@@ -631,7 +626,7 @@
         "presets":[
             {
                 "id": "fabric_black-blue_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Black/Blue Felt",
                 "type": "Laser Cut",
                 "params": {
@@ -646,7 +641,7 @@
             },
             {
                 "id":"fabric_red-purple_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Red/Purple Felt",
                 "type": "Laser Cut",
                 "params": {
@@ -685,7 +680,7 @@
         "presets":[
             {
                 "id": "acrylic-black_3mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "3mm Black Acrylic",
                 "type": "Laser Cut",
                 "params": {
@@ -700,7 +695,7 @@
             },
             {
                 "id": "acrylic-black_6mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "6mm Black Acrylic",
                 "type": "Laser Cut",
                 "params": {
@@ -715,7 +710,7 @@
             },
             {
                 "id": "acrylic-black_fill",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Fill Black Acrylic",
                 "type": "Laser Fill Path",
                 "params":{
@@ -731,7 +726,7 @@
             },
             {
                 "id": "acrylic-black_raster",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Raster Black Acrylic",
                 "type": "Laser Raster",
                 "params": {
@@ -773,7 +768,7 @@
         "presets":[
             {
                 "id": "acrylic-colored_3mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "3mm Colored Acrylic",
                 "type": "Laser Cut",
                 "params": {
@@ -788,7 +783,7 @@
             },
             {
                 "id": "acrylic-colored_6mm_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "6mm Colored Acrylic",
                 "type": "Laser Cut",
                 "params": {
@@ -803,7 +798,7 @@
             },
             {
                 "id": "acrylic-colored_fill",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Fill Colored Acrylic",
                 "type": "Laser Fill Path",
                 "params":{
@@ -819,7 +814,7 @@
             },
             {
                 "id": "acrylic-colored_raster",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Raster Colored Acrylic",
                 "type": "Laser Raster",
                 "params": {
@@ -865,7 +860,7 @@
         "presets":[
             {
                 "id":"metal_fill",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Fill Metal",
                 "type": "Laser Fill Path",
                 "params": {
@@ -881,7 +876,7 @@
             },
             {
                 "id": "metal_raster",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Raster Metal",
                 "type": "Laser Raster",
                 "params": {
@@ -925,7 +920,7 @@
         "presets":[
             {
                 "id": "seaweed_cut",
-                "machine_profile":"emblaser2",
+                "machine_profile":"*emblaser2",
                 "name": "Seaweed",
                 "type": "Laser Cut",
                 "params": {
